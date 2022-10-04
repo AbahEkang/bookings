@@ -6,7 +6,7 @@ This repository is for my bookings and reservations project.
 
 - Uses the [chi router](github.com/go-chi/chi)
 
-- Uses [Alex Edwards SCS session management](github.com/alexedwards/scs/v2)
+- Uses [Alex Edwards SCS session management](https://github.com/alexedwards/scs/v2)
 
-- Uses [nosurf](github.com/justinas/nosurf)
+- Uses [nosurf](https://github.com/justinas/nosurf)
 
