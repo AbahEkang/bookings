@@ -5,103 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+    <link rel="stylesheet" type="text/css" href="/html-source/static/css/styles.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+    
     <title>Booking</title>
-    <style>
-        .my-footer{
-            height: 5rem;
-            padding: 1rem;
-            background-color: greenyellow;
-            margin-top: 2rem;
-            text-align: center;
-        }
-    </style>
+    
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about.html">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Rooms
-                </a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/generals.html">General's Quarters</a></li>
-                  <li><a class="dropdown-item" href="/majors.html">Major's Suite</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/reservation.html" aria-disabled="false">Book Now</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact.html" aria-disabled="false">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-  
-   
-  <!--Container-->
-    <div class="container">
-
-          <div class="row">
-            <div class="col">
-              <h1 class="text-center mt-5 mb-5">Welcome to Emia Bed And Breakfast!</h1>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-              <h4 class="mt-4 mb-4 text-center">Search for Availability</h4>
-            
-              <form action="/reservation.html" method="get">
-                <div class="row">
-                  <div class="col">
-                    <div class="mb-3 text-center">
-                      <label for="start-date" class="form-label">Starting Date</label>
-                      <input required type="date" class="form-control" id="start-date" name="start-date" aria-describedby="startDateHelp">
-                      <div id="dateHelp" class="form-text">Enter your Starting date</div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="mb-3 text-center">
-                      <label for="end-date" class="form-label">Ending Date</label>
-                      <input required type="date" class="form-control" id="end-date" name="end-date" aria-describedby="endDateHelp">
-                      <div id="dateHelp" class="form-text">Enter your Ending date.</div>
-                    </div>
-                  </div>
-                </div>
-                
-               
-
-                <button type="submit" class="btn btn-primary mt-4">Check Availability</button>
-              
+  <body>
+      <nav class="navbar navbar-expand-lg bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Rooms
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/generals.html">General's Quarters</a></li>
+                    <li><a class="dropdown-item" href="/majors.html">Major's Suite</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/reservation.html" aria-disabled="false">Book Now</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html" aria-disabled="false">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+                <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
             </div>
-            
           </div>
-                 
-    </div>
+        </nav>
+    
+    
+    <!--Container-->
+      <div class="container">
 
-    <div class="row my-footer">
+            <div class="row">
+              <div class="col">
+                <h1 class="text-center mt-5 mb-5">Welcome to Emia Bed And Breakfast!</h1>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <h4 class="mt-4 mb-4 text-center">Search for Availability</h4>
+              
+                <form action="/html-source/reservation.html" method="get" novalidate class="needs-validation">
+                 
+                  <div class="row" id="reservation-dates">
+                    <div class="col">
+                        <label for="start">Starting date</label>
+                        <input required class="form-control" type="text" name="start" placeholder="Arrival date">
+                    </div>
+                   
+                      <div class="col" >
+                        <label for="end">Ending date</label>
+                          <input  required class="form-control" type="text" name="end" placeholder="Departure date">
+                      </div>
+                    
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary mt-4">Check Availability</button>
+                
+                </form>
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="col">
+                <p id="prova">This is some text...</p>
+                <p>
+                  <button class="btn btn-outline-primary" id="btnColor">Click me</button>
+                </p>
+              </div>
+            </div>
+                  
+      </div>
+      <div class="row my-footer">
         <div class="col">
             left
         </div>
@@ -111,10 +108,215 @@
         <div class="col">
             Right
         </div>
-    </div>
+      </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-</body>
+      
+
+      <script src="https://code.jquery.com/jquery-3.6.0.js">
+      </script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+      <script src="https://unpkg.com/notie"></script>
+      
+      <script>
+        //Form validation
+        let attention = Prompt();
+
+        (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.getElementsByClassName("needs-validation")
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+      
+      
+      let prova = document.getElementById("prova");
+      let myBtn = document.getElementById("btnColor")
+
+      myBtn.addEventListener("click", function(){
+
+        let html = `
+          <form id="check-availability-form" action="" method="post" novalidate class="needs-validation">  
+            <div class="row" id="reservation-dates-modal">  
+                <div class="col">
+                    <div class="col">
+                      <input disabled required class="form-control" type="text" name="start" id="start" placeholder="Arrival">
+                    </div>   
+                </div>
+                <div class="col">
+                    <div class="col">
+                      <input disabled required class="form-control" type="text" name="end" id="end" placeholder="Departure">
+                    </div>  
+                </div>
+            </row>
+          </form>
+            `
+
+          // notify("This is my message", "error");
+          //notifyModal("Reservation", "<em>Good!</em>", "success", "Fire")
+
+          //attention.toast({msg:"Error! Something went wrong.", icon:"error", position:'top-end'});
+
+          //attention.success({icon:"success", title:"Owe!", text:"Wayem!", footer:"<em>Edzom esse wabo' yawulu!</em>"})
+          //attention.error({icon:"error", title:"Ya!", text:"Esig nala!", footer:"<em>Ekie, dzefe yalot?</em>"})
+          attention.custom({msg: html, title:"Choose your dates"})
+      })    
+     
+      function notify(msg, msgType){
+          notie.alert({
+              type: msgType, // optional, default = 4, enum: [1, 2, 3, 4, 5, 'success', 'warning', 'error', 'info', 'neutral']
+              text: msg,
+      });}
+
+      function notifyModal(title, text, icon, confirmationButtonText){
+        Swal.fire({
+            icon: icon,
+            title: title,
+            html: text,
+            confirmButtonText:confirmationButtonText,
+            showConfirmButton: true,
+            timer: 1500
+          })
+      }
+
+      function Prompt(){
+
+        let toast = function(message){
+
+          const {
+              msg = "",
+              icon = '',
+              position = '',
+          } = message;
+          
+          const Toast = Swal.mixin({
+            toast: true,
+            position: message.position,
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+          icon: message.icon,
+          title: message.msg
+        })
+        }
+
+
+        let success = function(message){
+
+          const {
+            icon = '',
+            title = '',
+            text = '',
+            footer = ''
+
+          } = message
+
+          Swal.fire({
+            icon: 'success',
+            title: title,
+            text: text,
+            footer: footer,
+            showConfirmButton:false,
+          })
+
+        }
+        let error = function(message){
+
+          const {
+            icon = '',
+            title = '',
+            text = '',
+            footer = ''
+
+          } = message
+
+          Swal.fire({
+            icon: 'error',
+            title: title,
+            text: text,
+            footer: footer,
+            showConfirmButton:false,
+          })
+
+        }
+
+        async function custom(c){
+            const {
+              msg = "",
+              title = "",
+            } = c;
+
+            const {value: forValues} = await Swal.fire({
+              title: title,
+              html: msg,
+              backdrop: false,
+              focusConfirm: false,
+              
+
+              willOpen: () => {
+                 const elmt = document.getElementById("reservation-dates-modal");
+                 const rp = new DateRangePicker(elmt, {
+                    format: 'yyyy-mm-dd',
+                    showOnFocus: true,
+                 })
+                 
+              },
+              
+              preConfirm: () => {
+                return [
+                  document.getElementById('start').value,
+                  document.getElementById('end').value
+                ]
+              }  ,
+
+              didOpen: () =>{
+                document.getElementById('start').removeAttribute('disabled');
+                document.getElementById('end').removeAttribute('disabled');
+              },
+  
+
+            })
+
+        }
+
+        return{
+          toast: toast,
+          success: success,
+          error: error,
+          custom:custom,
+        }
+      }
+
+      const elem = document.getElementById("reservation-dates")
+      const rangepicker = new DateRangePicker(elem, {
+            format: "yyyy-mm-dd",
+      })
+
+
+      </script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </body>
+
 </html>
